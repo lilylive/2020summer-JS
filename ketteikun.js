@@ -70,6 +70,7 @@ decisionButton.onclick = ()　=> {
      anchor.setAttribute('href', hrefValue);
      anchor.className = 'twitter-hashtag-button';
      anchor.setAttribute('data-text', '選択くんが教えてくれるわたしの答えは', random);
+     anchor.setAttribute('data-url', "https://lilylive.github.io/2020summer-JS/ketteikun.html");
      anchor.innerText = 'Tweet #選択くん';
      tweetArea.appendChild(anchor);
     
