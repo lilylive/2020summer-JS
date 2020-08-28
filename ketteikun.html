@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="JA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="決定くん" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ketteikun.css">
+  <link rel="shortcut icon" href="./sentaku_ita.png">
+  <title>選択くん</title>
+</head>
+<body>
+  <h1>選択くん</h1>
+  <br>
+  <p class="ketteikun">
+  <img src="./pose_inoru_man_hisshi.png" alt="悩む男の子">
+  </p>
+  <h3 id="catch">選択くんはあなたの悩ましい問題を決定してくれる　頼もしい味方です！</h3>
+  <h5>今日の夕ご飯はラーメンか。。つけ麺か。。。<br>世界の半分をもらうか、頑張って魔王を倒すか。。<br>あなたがどれにしようかと決めかねている選択肢を下のカラムに記載すると</h5>
+  <h3>選択くんがあなたにとって正しい答えを教えてくれます！</h3>
+  <input type="text" id="choices-a" class="selectbox">
+  <input type="text" id="choices-b" class="selectbox"> 
+  <input type="text" id="choices-c" class="selectbox">　
+  <p>※選択肢が二つの場合は最後の選択肢に「なし」と入れてください。</p>
+  <br>
+<button id="decision">選択</button>
+<div class ="godimg" id="godimg">
+  <img src="./internet_god.png" alt="god" >
+
+</div>
+<div id="result-area"></div>
+<div id="tweet-area"></div>
+
+<script src="ketteikun.js"></script>
+</body>
+</html>
