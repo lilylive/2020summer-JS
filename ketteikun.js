@@ -16,6 +16,7 @@ function removeAllChirdren (element) {
 
 //ボタンをクリックした場合の挙動
 decisionButton.onclick = ()　=> {
+  //複数回ボタンを押しても異なる結果が出ないように制御
   decisionButton.onclick = "disabled = true;"
   const answerA = choicesInputA.value;
   const answerB = choicesInputB.value;
@@ -26,12 +27,15 @@ decisionButton.onclick = ()　=> {
   if(answerA.length === 0){
     return;
   }
-
   if(answerB.length === 0){
     return;
   }
   if(answerC.length === 0){
     return;
+  }
+  //三番目の回答が「なし」だった場合最後の配列を削除する
+  if(answerC === 'なし'){
+    answerarray.pop();
   }
     //選択肢から回答を選ぶ
   var random = answerarray[Math.floor(Math.random()*answerarray.length)];
@@ -44,7 +48,7 @@ decisionButton.onclick = ()　=> {
     
   
     
-    
+    //回答の前段の紹介
     const header = document.createElement('h3');
     header.innerText = '判定結果';
     resultArea.appendChild(header);
@@ -57,7 +61,7 @@ decisionButton.onclick = ()　=> {
 
     //回答の語尾
     const paragraph2 = document.createElement('P');
-    paragraph2.innerText = 'がお主の求める答えじゃ！！！！';
+    paragraph2.innerText = 'が、お主の求める答えじゃ！！！！';
     resultArea.appendChild(paragraph2);
     
 
@@ -65,13 +69,14 @@ decisionButton.onclick = ()　=> {
     removeAllChirdren(tweetArea);
     const anchor = document.createElement('a');
     const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag='
-      + encodeURIComponent('選択くん')
+      + encodeURIComponent('選択くんが教えてくれる私の答え')
       + '&ref_src=twsrc%5Etfw';
      anchor.setAttribute('href', hrefValue);
      anchor.className = 'twitter-hashtag-button';
-     anchor.setAttribute('data-text', '選択くんが教えてくれるわたしの答えは', random);
+     anchor.setAttribute('data-text', random);
+     
+     anchor.innerText = 'Tweet #選択くんが教えてくれる私の答え';
      anchor.setAttribute('data-url', "https://lilylive.github.io/2020summer-JS/ketteikun.html");
-     anchor.innerText = 'Tweet #選択くん';
      tweetArea.appendChild(anchor);
     
      
