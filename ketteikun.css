@@ -6,7 +6,9 @@ body {
   margin-left : auto;
 }
 
-
+#title{
+  margin: 10px 10px;
+}
 .ketteikun {
   text-align:center;
 }
@@ -24,6 +26,10 @@ body {
   100% {transform: translate(160px, 0px) rotateZ(0deg)}
 }
 
+#catch
+{margin: 10px 10px;
+}
+
 .godimg
  {display:none;
   text-align:center;
@@ -39,6 +45,9 @@ body {
     100% { transform: translateY(0) }
   }
 
+#result-area{
+  margin: 10px 10px;
+}
 
 button {
   padding: 5px 20px;
@@ -56,12 +65,11 @@ button {
 
 #result-area{
   font-size: xx-large;
+  margin: 0px 10px
 }
 
-#tweet-area{
-  width: 150px;
-}
 
 .selectbox{
   height: 30px;
+  margin: 5px 5px;
 }
