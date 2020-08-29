@@ -59,7 +59,7 @@ decisionButton.onclick = ()　=> {
     paragraph.innerText = random;
     resultArea.appendChild(paragraph);
 
-    //回答の語尾
+    //回答の語尾部分
     const paragraph2 = document.createElement('P');
     paragraph2.innerText = 'が、お主の求める答えじゃ！！！！';
     resultArea.appendChild(paragraph2);
@@ -76,7 +76,7 @@ decisionButton.onclick = ()　=> {
      anchor.setAttribute('data-text', random);
      
      anchor.innerText = 'Tweet #選択くんが教えてくれる私の答え';
-     anchor.setAttribute('data-url', "https://lilylive.github.io/2020summer-JS/ketteikun.html");
+     anchor.setAttribute('data-url', "https://lilylive.github.io/2020summer-JS/ketteikun.html/");
      tweetArea.appendChild(anchor);
     
      
