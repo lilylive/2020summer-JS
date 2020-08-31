@@ -27,7 +27,7 @@ body {
 }
 
 #catch
-{margin: 10px 10px;
+{margin: 30px 30px;
 }
 
 .godimg
@@ -65,9 +65,12 @@ button {
 
 #result-area{
   font-size: xx-large;
-  margin: 0px 10px
+  margin: 30px 30px
 }
 
+#tweet-area{
+  margin: 30px
+}
 
 .selectbox{
   height: 30px;
