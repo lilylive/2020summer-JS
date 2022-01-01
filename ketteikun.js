@@ -76,7 +76,7 @@ decisionButton.onclick = ()　=> {
      anchor.setAttribute('data-text', random);
      
      anchor.innerText = 'Tweet #選択くんが教えてくれる私の答え';
-     anchor.setAttribute('data-url', "https://lilylive.github.io/2020summer-JS/ketteikun.html/");
+     anchor.setAttribute('data-url', "https://lilylive.github.io/2020_02summer-JS/ketteikun.html/");
      tweetArea.appendChild(anchor);
     
      
